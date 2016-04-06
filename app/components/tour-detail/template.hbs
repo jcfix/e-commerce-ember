@@ -1,0 +1,10 @@
+<div class="tour-detail">
+  <h3>Tour Name: {{tour.name}}</h3>
+  <p>{{tour.price}}</p>
+  <p>{{tour.tourLength}}</p>
+  <p>{{tour.description}}</p>
+  <img src={{tour.image}}/>
+  <p>{{tour.itinerary}}</p>
+</div>
+
+<button class="btn" {{action 'addToCart' tour}}>Add to Cart</button>

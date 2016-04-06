@@ -1,10 +1,1 @@
-<div class="tour-detail">
-  <h3>Tour Name: {{model.name}}</h3>
-  <p>{{model.price}}</p>
-  <p>{{model.tourLength}}</p>
-  <p>{{model.description}}</p>
-  <img src={{model.image}}/>
-  <p>{{model.itinerary}}</p>
-</div>
-
-<button class="btn" {{action 'addToCart' tour}}>Add to Cart</button>
+{{tour-detail tour=model}}
