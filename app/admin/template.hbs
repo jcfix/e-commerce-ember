@@ -2,10 +2,9 @@
   {{new-tour tour=tour save2="save3"}}
 </div>
 
-
 <div class="row">
   <h4>Tours</h4>
-  {{#each model as |tour|}}  
-    {{tour-tile tour=tour}}
+  {{#each model as |tour|}}
+    {{tour-tile tour=tour destroyTour="destroyTour"}}
   {{/each}}
 </div>

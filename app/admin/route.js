@@ -9,6 +9,10 @@ export default Ember.Route.extend({
       var newTour = this.store.createRecord('tour', params);
       newTour.save();
       this.transitionTo('admin');
+    },
+    destroyTour(tour) {
+      tour.destroyRecord();
+      this.transitionTo('admin');
     }
   }
 });
