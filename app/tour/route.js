@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
-  model: function() {
-    return this.store.find('tour');
+export default Ember.Route.extend({
+  model(params) {
+    return this.store.findRecord('tour', params.tour_id);
   }
 });
