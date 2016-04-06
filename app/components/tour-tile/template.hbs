@@ -4,6 +4,7 @@
     <h3>{{tour.name}}</h3>{{/link-to}}
     <p>{{tour.price}}</p>
     <p>{{tour.length}}</p>
+    {{update-tour tour=tour update="update"}}
   <div class="delete-tour">
     <button class="waves-effect waves-green btn deleteBtn" {{action 'delete' tour}}>Delete</button>
   </div>

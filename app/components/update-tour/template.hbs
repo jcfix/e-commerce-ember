@@ -1,0 +1,40 @@
+{{#if editNewTour}}
+  <h1>Edit Tour</h1>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input value=name id="name" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price</label>
+          {{input value=price id="price" type="number" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="tourLength">Tour length</label>
+          {{input value=tourLength id="tourLength" type="text" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          {{input value=description id="description" type="text" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          {{input value=image id="image" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="itinerary">Itinerary</label>
+          {{input value=itinerary id="itinerary" class="form-control"}}
+        </div>
+
+      <button class="waves-effect waves-light btn"{{action 'update' tour}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button id="btn-updateTour" class="btn"{{action 'editNewTour'}}>Edit Tour</button>
+{{/if}}
