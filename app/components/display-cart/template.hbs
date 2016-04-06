@@ -1,3 +1,6 @@
-{{#each shoppingCart.tours as |tour|}}
-  {{tour.name}} -- {{tour.price}}
-{{/each}}
+<div class="cart">
+  <h3>Your Cart:</h3>
+  {{#each shoppingCart.items as |item|}}
+    <p>{{item.name}} -- {{item.price}}</p>
+  {{/each}}
+</div>

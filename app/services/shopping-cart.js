@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  tours: [],
+  items: [],
 
-  add(tour) {
-    this.get('tours').pushObject(tour);
+  add(item) {
+    this.get('items').pushObject(item);
   }
 });
