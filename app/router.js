@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('admin');
   this.route('new-tour');
   this.route('tour', {path: '/tour/:tour_id'});
+  this.route('trip');
 });
 
 export default Router;
