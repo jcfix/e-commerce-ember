@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('new-tour');
   this.route('tour', {path: '/tour/:tour_id'});
   this.route('trip');
+  this.route('cart');
 });
 
 export default Router;
