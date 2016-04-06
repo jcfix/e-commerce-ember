@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  editNewTour: false,
+  editTour: false,
   actions: {
     update(tour, params) {
       this.sendAction('update', tour, params);

@@ -1,10 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  editNewTour: false,
+  editTour: false,
   actions: {
-    editNewTour() {
-      this.set('editNewTour', true);
+    editTour() {
+      this.set('editTour', true);
     },
     update(tour) {
       var params = {
@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         image: this.get('image') ? this.get('image') : "",
         itinerary: this.get('itinerary') ? this.get('itinerary') : ""
       };
-      this.set('editNewTour', false);
+      this.set('editTour', false);
       this.sendAction('update', tour, params);
     }
   }

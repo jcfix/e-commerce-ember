@@ -1,4 +1,4 @@
-{{#if editNewTour}}
+{{#if editTour}}
   <h1>Edit Tour</h1>
     <div class="container">
       <form>
@@ -36,5 +36,5 @@
       </form>
     </div>
 {{else}}
-    <button id="btn-updateTour" class="btn"{{action 'editNewTour'}}>Edit Tour</button>
+    <button id="btn-updateTour" class="btn"{{action 'editTour'}}>Edit Tour</button>
 {{/if}}
