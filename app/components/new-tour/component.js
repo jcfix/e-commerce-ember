@@ -17,6 +17,12 @@ export default Ember.Component.extend({
       };
       this.set('addNewTour', false);
       this.sendAction('save2', params);
+      this.set('name', "");
+      this.set('price', "");
+      this.set('tourLength', "");
+      this.set('description', "");
+      this.set('image', "");
+      this.set('itinerary', "");
     }
   }
 });
