@@ -1,6 +1,8 @@
-<div class="row">
-  <h4>Tours</h4>
-  {{#each model as |tour|}}
+<div class="user-trips">
+  <h1>Tours</h1>
+  <div class="row trip-list">
+    {{#each model as |tour|}}
     {{trip-tile tour=tour}}
-  {{/each}}
+    {{/each}}
+  </div>
 </div>

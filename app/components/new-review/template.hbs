@@ -1,9 +1,9 @@
 {{#if addNewReview}}
-  <h1>New Review</h1>
+  <h5>Let us know what you think of this tour!</h5>
     <div class="container">
       <form>
         <div class="form-group">
-          <label for="user">Username</label>
+          <label for="user">Your Name</label>
           {{input value=user id="user" class="form-control"}}
         </div>
 
@@ -12,9 +12,9 @@
           {{input value=review id="review" class="form-control"}}
         </div>
 
-        <button class="waves-effect waves-green btn saveNewReview"{{action 'save1'}}>Save</button>
+        <button class="waves-effect waves-light btn adminBtn"{{action 'save1'}}>Save</button>
       </form>
     </div>
 {{else}}
-    <button class="waves-effect waves-green btn newReviewForm"{{action 'reviewFormShow'}}>New Review</button>
+    <button class="waves-effect waves-light btn adminBtn"{{action 'reviewFormShow'}}>New Review</button>
 {{/if}}

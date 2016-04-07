@@ -1,9 +1,11 @@
 <div class="tour-detail">
-  <h3>Tour Name: {{tour.name}}</h3>
-  <p>{{tour.price}}</p>
-  <p>{{tour.tourLength}}</p>
-  <p>{{tour.description}}</p>
+  <h3>{{tour.name}}</h3>
   <img src={{tour.image}}/>
-  <p>{{tour.itinerary}}</p>
-  <button class="btn" {{action 'addToCart' tour}}>Add to Cart</button>
+  <p>Price: ${{tour.price}}</p>
+  <p>Length: {{tour.tourLength}} Days</p>
+  <p>{{tour.description}}</p>
+  <p>Itinerary: {{tour.itinerary}}</p>
+  <button class="waves-effect waves-light btn adminBtn" {{action 'addToCart' tour}}>Add to Cart</button>
+  <br>
+  <br>
 </div>

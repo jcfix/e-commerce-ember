@@ -1,6 +1,6 @@
-<div class="col s3">
+<div class="col s4 trip">
   {{#link-to 'tour' tour.id}}<img src="{{tour.image}}" alt="photo of hot air balloons">
-  <h3>{{tour.name}}</h3>{{/link-to}}
-  <p>{{tour.price}}</p>
-  <p>{{tour.length}}</p>
+  <h3 class="tour-name">{{tour.name}}</h3>{{/link-to}}
+  <p>$ {{tour.price}}</p>
+  <p>{{tour.tourLength}} Days</p>
 </div>

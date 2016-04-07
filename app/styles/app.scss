@@ -5,7 +5,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-
 /***** NAVBAR *****/
 nav {
   text-transform: uppercase;
@@ -99,7 +98,7 @@ nav {
 }
 
 img {
-  width: 200px;
+  width: 300px;
 }
 
 .adminBtn {
@@ -108,6 +107,10 @@ img {
 
 .adminBtn:hover {
   background-color: lightslategrey;
+}
+
+.adminBtn:focus {
+background-color: lightslategrey;
 }
 
 .tour-list {
@@ -122,4 +125,29 @@ img {
 .tourTile {
   text-align: center;
   // width: 300px;
+}
+
+/***** USER TRIPS *****/
+
+.user-trips {
+  text-align: center;
+}
+
+.user-trips, p {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.tour-name {
+  color: black;
+}
+
+.tour-name:hover {
+  color: #607D8B ;
+}
+
+/***** CART PAGE *****/
+
+.cart-total {
+  padding-top: 50px;
 }
