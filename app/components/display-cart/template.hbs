@@ -1,9 +1,13 @@
 <div class="cart">
   <h3>Your Cart:</h3>
+  <hr>
   {{#each shoppingCart.items as |item|}}
-    <p>{{item.name}} -- {{item.price}}</p>
-    <button {{action 'remove' item}}>Remove from Cart</button>
+    <p>{{item.name}}</p>
+    <img src={{item.image}}/>
+    <p>${{item.price}}</p>
+    <button class="waves-effect waves-light btn adminBtn" {{action 'remove' item}}>Remove from Cart</button>
   {{/each}}
-  <button {{action 'emptyCart' items}}>Empty Cart</button>
 </div>
-<h4>Cart Total: ${{shoppingCart.cartTotal}}</h4>
+<h4 class="cart-total">Cart Total: ${{shoppingCart.cartTotal}}</h4>
+<br>
+<button class="waves-effect waves-light btn adminBtn" {{action 'emptyCart' items}}>Empty Cart</button>
