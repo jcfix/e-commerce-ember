@@ -2,10 +2,10 @@
   <div class="nav-wrapper">
     <a href="#" class="brand-logo">Logo</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="trip">Trips</a></li>
-      <li><a href="about">About Us</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li><a href="cart">Cart</a></li>
+      {{#link-to 'trip'}}<li>Trips</li>{{/link-to}}
+        <!-- {{#link-to 'about'}}<li>About Us</li>{{/link-to}} -->
+        <!-- {{#link-to 'contact'}}<li>Contact</li>{{/link-to}} -->
+        {{#link-to 'cart'}}<li>Cart</li>{{/link-to}}
     </ul>
   </div>
 </nav>
