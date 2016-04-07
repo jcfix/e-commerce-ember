@@ -69,14 +69,57 @@ nav {
 
 /***** ADMIN HOMEPAGE *****/
 
+.new-tour {
+  text-align: center;
+  padding-top: 28px;
+  margin-top: 2em;
+  background-color: rgba(112, 128, 144, 0.7);
+  padding-bottom: 28px;
+  border: 4px solid black;
+}
+
 #btn-newTour {
+  background-color: #455A64;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4%;
+  margin-top: 5%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
+#btn-newTour:hover {
+  background-color: #607D8B;
+}
+
+#add-tour, label {
+  color: black;
+}
 
 img {
   width: 200px;
+}
+
+.adminBtn {
+  background-color: #607D8B;
+}
+
+.adminBtn:hover {
+  background-color: lightslategrey;
+}
+
+.tour-list {
+  padding-top: 10em;
+}
+
+.tour-list h4 {
+  margin-top: 1px;
+  padding-bottom: 1em;
+}
+
+.tourTile {
+  text-align: center;
+  // width: 300px;
 }

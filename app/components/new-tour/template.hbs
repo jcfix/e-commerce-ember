@@ -1,7 +1,6 @@
 {{#if addNewTour}}
-  <h1>New Tour</h1>
     <div class="container">
-      <form>
+      <form id="add-tour">
         <div class="form-group">
           <label for="name">Name</label>
           {{input value=name id="name" class="form-control"}}
@@ -32,9 +31,9 @@
           {{input value=itinerary id="itinerary" class="form-control"}}
         </div>
 
-        <button class="btn"{{action 'save1'}}>Save</button>
+        <button class="waves-effect waves-light btn adminBtn"{{action 'save1'}}>Save</button>
       </form>
     </div>
 {{else}}
-    <button id="btn-newTour" class="btn"{{action 'tourFormShow'}}>New Tour</button>
+    <button id="btn-newTour" class="waves-effect waves-light btn adminBtn"{{action 'tourFormShow'}}>New Tour</button>
 {{/if}}

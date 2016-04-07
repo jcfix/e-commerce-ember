@@ -1,9 +1,10 @@
 <div class="row new-tour">
+  <h4>ADD A NEW TOUR</h4>
   {{new-tour tour=tour save2="save3"}}
 </div>
 
-<div class="row">
-  <h4>Tours</h4>
+<div class="row tour-list">
+  <h4>TOURS</h4>
   {{#each model as |tour|}}
     {{tour-tile tour=tour update="update" destroyTour="destroyTour"}}
   {{/each}}
