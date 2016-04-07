@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   actions: {
     addToCart(item) {
       this.get('shoppingCart').add(item);
+        return Ember.String.htmlSafe('<h5>This tour has been added to your cart.</h5>');
     }
   }
 });
