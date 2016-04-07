@@ -1,1 +1,10 @@
 {{tour-detail tour=model}}
+
+{{new-review tour=model save2="save3"}}
+
+<h4>Reviews:</h4>
+{{#each model.reviews as |review|}}
+  <div>
+    {{review-tile review=review update="update"}}
+  </div>
+{{/each}}
