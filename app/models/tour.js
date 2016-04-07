@@ -6,5 +6,6 @@ export default DS.Model.extend({
   tourLength: DS.attr(),
   description: DS.attr(),
   image: DS.attr(),
-  itinerary: DS.attr()
+  itinerary: DS.attr(),
+  reviews: DS.hasMany('review', { async: true })
 });
