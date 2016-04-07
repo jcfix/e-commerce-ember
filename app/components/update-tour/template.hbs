@@ -3,32 +3,32 @@
       <form>
         <div class="form-group">
           <label for="name">Name</label>
-          {{input value=name id="name" class="form-control"}}
+          {{input value=tour.name id="name" class="form-control"}}
         </div>
 
         <div class="form-group">
           <label for="price">Price</label>
-          {{input value=price id="price" type="number" class="form-control"}}
+          {{input value=tour.price id="price" type="number" class="form-control"}}
         </div>
 
         <div class="form-group">
           <label for="tourLength">Tour length</label>
-          {{input value=tourLength id="tourLength" type="text" class="form-control"}}
+          {{input value=tour.tourLength id="tourLength" type="text" class="form-control"}}
         </div>
 
         <div class="form-group">
           <label for="description">Description</label>
-          {{input value=description id="description" type="text" class="form-control"}}
+          {{input value=tour.description id="description" type="text" class="form-control"}}
         </div>
 
         <div class="form-group">
           <label for="image">Image URL</label>
-          {{input value=image id="image" class="form-control"}}
+          {{input value=tour.image id="image" class="form-control"}}
         </div>
 
         <div class="form-group">
           <label for="itinerary">Itinerary</label>
-          {{input value=itinerary id="itinerary" class="form-control"}}
+          {{input value=tour.itinerary id="itinerary" class="form-control"}}
         </div>
 
       <button class="waves-effect waves-light btn adminBtn"{{action 'update' tour}}>Save</button>
