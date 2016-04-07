@@ -12,5 +12,12 @@ export default Ember.Service.extend({
   },
   empty() {
     this.get('items').setObjects([]);
-  }
+  },
+  cartTotal: Ember.computed('items.length', function() {
+    var cartTotal = 0;
+    for (let total of this.get('items')) {
+      cartTotal += parseInt(total.get('price'));
+    }
+    return cartTotal;
+  })
 });
